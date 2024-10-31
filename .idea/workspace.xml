@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cbdb226d-13c5-44f2-a4fd-e5a86a3cebf7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/belajar_mabrur_backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/validation/user-validation.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="OpenAPI" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
+    <option name="myAllFileTypesSelected" value="true" />
+    <option name="mySelectedFileTypes">
+      <set />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2oAjN9NBdURYU65dfeUmyQQOq3F" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Jest.DELETE /api/users/logout.executor": "Run",
+    "Jest.DELETE /api/users/logout.should reject logout if token is invalid.executor": "Run",
+    "Jest.GET /api/users/current.executor": "Run",
+    "Jest.GET /api/users/current.should can get current user.executor": "Run",
+    "Jest.PATCH /api/users/current.executor": "Run",
+    "Jest.PATCH /api/users/current.should can update user.executor": "Run",
+    "Jest.POST /api/users.executor": "Run",
+    "Jest.POST /api/users.should can register new user.executor": "Run",
+    "Jest.POST /api/users.should reject if request is invalid.executor": "Run",
+    "Jest.POST /api/users/login.executor": "Run",
+    "Jest.POST /api/users/login.should can login.executor": "Run",
+    "Jest.POST /api/users/login.should reject login if password is wrong.executor": "Run",
+    "Jest.user.test.js.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/src/route",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/node_modules/jest",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Brian Anashari\Desktop\MyDream\project\belajar_mabrur_backend\src\route" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Brian Anashari\Desktop\MyDream\project\belajar_mabrur_backend\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.DELETE /api/users/logout">
+    <configuration name="DELETE /api/users/logout" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/test/user.test.js" />
+      <test-names>
+        <test-name value="DELETE /api/users/logout" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="DELETE /api/users/logout.should reject logout if token is invalid" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/user.test.js" />
+      <test-names>
+        <test-name value="DELETE /api/users/logout" />
+        <test-name value="should reject logout if token is invalid" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="GET /api/users/current" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/test/user.test.js" />
+      <test-names>
+        <test-name value="GET /api/users/current" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="PATCH /api/users/current" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/test/user.test.js" />
+      <test-names>
+        <test-name value="PATCH /api/users/current" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="PATCH /api/users/current.should can update user" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/user.test.js" />
+      <test-names>
+        <test-name value="PATCH /api/users/current" />
+        <test-name value="should can update user" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.DELETE /api/users/logout" />
+        <item itemvalue="Jest.DELETE /api/users/logout.should reject logout if token is invalid" />
+        <item itemvalue="Jest.PATCH /api/users/current" />
+        <item itemvalue="Jest.PATCH /api/users/current.should can update user" />
+        <item itemvalue="Jest.GET /api/users/current" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cbdb226d-13c5-44f2-a4fd-e5a86a3cebf7" name="Changes" comment="" />
+      <created>1730319231970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730319231970</updated>
+      <workItem from="1730319233084" duration="17143000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
