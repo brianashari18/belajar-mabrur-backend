@@ -1,0 +1,4 @@
+{
+  "status": "INTERNAL SERVER ERROR",
+  "errors": "\nInvalid `prisma.user.findUnique()` invocation:\n\n\nError querying the database: Unknown authentication plugin `auth_gssapi_client'."
+}

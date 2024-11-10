@@ -1,0 +1,36 @@
+# Register
+POST http://192.168.18.11:3000/api/users
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "test",
+  "name": "test"
+}
+
+### Login
+POST http://192.168.18.11:3000/api/users/login
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "test_update"
+}
+
+### Get
+GET http://192.168.18.11:3000/api/users/current
+Authorization: 8fa7bf5f-9f29-49d0-8161-e02e088cec8f
+
+### Update
+PATCH http://192.168.18.11:3000/api/users/current
+Authorization: 8fa7bf5f-9f29-49d0-8161-e02e088cec8f
+Content-Type: application/json
+
+{
+  "name": "test_update",
+  "password": "test_update"
+}
+
+### Delete
+DELETE http://192.168.18.11:3000/api/users/logout
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db

@@ -1,0 +1,423 @@
+POST http://192.168.18.11:3000/api/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test_update"
+}
+
+<> 2024-11-09T164432.200.json
+
+###
+
+POST http://192.168.18.11:3000/api/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test_update"
+}
+
+<> 2024-11-09T164404.500.json
+
+###
+
+DELETE http://192.168.18.11:3000/api/users/logout
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T100738.401.json
+
+###
+
+PATCH http://192.168.18.11:3000/api/users/current
+Authorization: 8fa7bf5f-9f29-49d0-8161-e02e088cec8f
+Content-Type: application/json
+Content-Length: 56
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "test_update",
+  "password": "test_update"
+}
+
+<> 2024-11-09T090952.200.json
+
+###
+
+PATCH http://192.168.18.11:3000/api/users/current
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
+Content-Type: application/json
+Content-Length: 56
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "test_update",
+  "password": "test_update"
+}
+
+<> 2024-11-09T090945.401.json
+
+###
+
+GET http://192.168.18.11:3000/api/users/current
+Authorization: 8fa7bf5f-9f29-49d0-8161-e02e088cec8f
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T090939.200.json
+
+###
+
+POST http://192.168.18.11:3000/api/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test_update"
+}
+
+<> 2024-11-09T090912.200.json
+
+###
+
+GET http://192.168.18.11:3000/api/users/current
+Authorization: 4d434e17-b77a-474b-afa6-768c79e306cb
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T090910.401.json
+
+###
+
+POST http://192.168.18.11:3000/api/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test_update"
+}
+
+<> 2024-11-09T090906.200.json
+
+###
+
+POST http://192.168.18.11:3000/api/users
+Content-Type: application/json
+Content-Length: 64
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test",
+  "name": "test"
+}
+
+<> 2024-11-09T090857.500.json
+
+###
+
+POST http://192.168.18.11:3000/api/users
+Content-Type: application/json
+Content-Length: 64
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test",
+  "name": "test"
+}
+
+<> 2024-11-09T090848.500.json
+
+###
+
+GET http://192.168.18.11:3000/api/users/current
+Authorization: 4d434e17-b77a-474b-afa6-768c79e306cb
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T085610.200.json
+
+###
+
+POST http://192.168.18.11:3000/api/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test_update"
+}
+
+<> 2024-11-09T085459.200.json
+
+###
+
+GET http://192.168.18.11:3000/api/users/current
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T085455.401.json
+
+###
+
+POST http://192.168.18.11:3000/api/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test_update"
+}
+
+<> 2024-11-09T085453.200.json
+
+###
+
+POST http://192.168.18.11:3000/api/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test_update"
+}
+
+<> 2024-11-09T082955.200.json
+
+###
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test_update"
+}
+
+<> 2024-11-09T082817.200.json
+
+###
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Content-Length: 53
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test_update"
+}
+
+<> 2024-11-09T070055.200.json
+
+###
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Content-Length: 46
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test"
+}
+
+<> 2024-11-09T070041.401.json
+
+###
+
+DELETE http://localhost:3000/api/users/logout
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T064546.200.json
+
+###
+
+DELETE http://localhost:3000/api/users/current
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T064516.404.html
+
+###
+
+PATCH http://localhost:3000/api/users/current
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
+Content-Type: application/json
+Content-Length: 56
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "test_update",
+  "password": "test_update"
+}
+
+<> 2024-11-09T064433.200.json
+
+###
+
+PATCH http://localhost:3000/api/users/current
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
+Content-Type: application/json
+Content-Length: 85
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test_update",
+  "name": "test_update",
+  "password": "test_update"
+}
+
+<> 2024-11-09T064420.200.json
+
+###
+
+PATCH http://localhost:3000/api/users/current
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
+Content-Type: application/json
+Content-Length: 56
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "test_update",
+  "password": "test_update"
+}
+
+<> 2024-11-09T064356.200.json
+
+###
+
+GET http://localhost:3000/api/users/current
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T064248.200.json
+
+###
+
+GET http://localhost:3000/api/users/current
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98d
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T064245.401.json
+
+###
+
+GET http://localhost:3000/api/users/current
+Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-09T064233.200.json
+
+###
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Content-Length: 46
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test"
+}
+
+<> 2024-11-09T064127.200.json
+
+###
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Content-Length: 64
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "test",
+  "password": "test",
+  "name": "test"
+}
+
+<> 2024-11-09T064006.200.json
+
+###
+

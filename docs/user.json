@@ -35,7 +35,7 @@
         },
         "required": ["username", "password"]
       },
-      "UpdateRequest": {
+      "UserUpdateRequest": {
         "type": "object",
         "properties": {
           "name": { "type": "string", "maxLength": 100, "example": "test" },
@@ -57,7 +57,8 @@
             "type": "object",
             "properties": {
               "username": { "type": "string", "example": "test" },
-              "name": { "type": "string", "example": "test" }
+              "name": { "type": "string", "example": "test" },
+              "role": { "type": "string", "example": "user" }
             }
           }
         }
@@ -123,6 +124,54 @@
           },
           "errors": { "type": "string", "example": "Response Error" }
         }
+      },
+      "ContentItemResponse": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "integer", "example": 1 },
+          "name": { "type": "string", "example": "Niat Umrah dari Miqat" },
+          "arabic": { "type": "string", "example": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً" },
+          "latin": { "type": "string", "example": "Labbaikallaahumma 'umratan" },
+          "translate-id": { "type": "string", "example": "Ya Allah, aku penuhi panggilan-Mu untuk umrah." }
+        }
+      },
+      "ContentMessageResponse": {
+        "type": "object",
+        "properties": {
+          "code": { "type": "number", "example": 200 },
+          "status": { "type": "string", "example": "OK" },
+          "data": {
+            "type": "object",
+            "properties": {
+              "id": { "type": "integer", "example": 1 },
+              "name": { "type": "string", "example": "Niat Umrah dari Miqat" },
+              "arabic": { "type": "string", "example": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً" },
+              "latin": { "type": "string", "example": "Labbaikallaahumma 'umratan" },
+              "translate-id": { "type": "string", "example": "Ya Allah, aku penuhi panggilan-Mu untuk umrah." }
+            }
+          }
+        }
+      },
+      "AddUpdateContentRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Niat Umrah dari Miqat"
+          },
+          "arabic": {
+            "type": "string",
+            "example": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً"
+          },
+          "latin": {
+            "type": "string",
+            "example": "Labbaikallaahumma 'umratan"
+          },
+          "translate-id": {
+            "type": "string",
+            "example": "Ya Allah, aku penuhi panggilan-Mu untuk umrah."
+          }
+        }
       }
     },
     "parameters": {
@@ -137,6 +186,7 @@
   "paths": {
     "/api/users": {
       "post": {
+        "tags": ["user"],
         "security": [
           {
             "ApiKeyAuth": []
@@ -173,6 +223,7 @@
     },
     "/api/users/login": {
       "post": {
+        "tags": ["user"],
         "security": [
           {
             "ApiKeyAuth": []
@@ -209,6 +260,7 @@
     },
     "/api/users/current": {
       "patch": {
+        "tags": ["user"],
         "security": [
           {
             "ApiKeyAuth": []
@@ -224,7 +276,7 @@
         "requestBody": {
           "content": {
             "application/json": {
-              "schema": { "$ref": "#/components/schemas/UpdateRequest" }
+              "schema": { "$ref": "#/components/schemas/UserUpdateRequest"}
             }
           }
         },
@@ -248,6 +300,7 @@
         }
       },
       "get": {
+        "tags": ["user"],
         "security": [
           {
             "ApiKeyAuth": []
@@ -282,6 +335,7 @@
     },
     "/api/users/logout": {
       "delete": {
+        "tags": ["user"],
         "security": [
           {
             "ApiKeyAuth": []
@@ -305,6 +359,188 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/contents": {
+      "post": {
+        "tags": ["Contents"],
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "summary": "Add Content",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddUpdateContentRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successfully add new content",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContentMessageResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Failed to add new content",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": ["Contents"],
+        "security": [
+          { "ApiKeyAuth": [] }
+        ],
+        "summary": "Retrieve All Content",
+        "responses": {
+          "200": {
+            "description": "Contents retrieved successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": { "type": "number", "example": 200 },
+                    "status": { "type": "string", "example": "OK" },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/ContentItemResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Failed to retrieve contents",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/contents/{contentId}": {
+      "get": {
+        "tags": ["Contents"],
+        "security": [
+          { "ApiKeyAuth": [] }
+        ],
+        "summary": "Get Content by ID",
+        "parameters": [
+          { "name": "contentId", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Content retrieved successfully",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ContentItemResponse"}
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": ["Contents"],
+        "security": [
+          { "ApiKeyAuth": [] }
+        ],
+        "summary": "Update Content by ID",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string", "example": "Updated Content Name" },
+                  "arabic": { "type": "string", "example": "Updated Arabic Text" },
+                  "latin": { "type": "string", "example": "Updated Latin Text" },
+                  "translate-id": { "type": "string", "example": "Updated translation" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Content updated successfully",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ContentItemResponse"}
+              }
+            }
+          },
+          "400": {
+            "description": "Failed to update content",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Contents"],
+        "security": [
+          { "ApiKeyAuth": [] }
+        ],
+        "summary": "Delete Content by ID",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "Content deleted successfully",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/DeleteMessageResponse" }
+              }
+            }
+          },
+          "400": {
+            "description": "Failed to delete content",
             "content": {
               "application/json": {
                 "schema": { "$ref": "#/components/schemas/ErrorResponse" }
