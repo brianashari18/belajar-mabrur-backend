@@ -132,7 +132,7 @@
           "name": { "type": "string", "example": "Niat Umrah dari Miqat" },
           "arabic": { "type": "string", "example": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً" },
           "latin": { "type": "string", "example": "Labbaikallaahumma 'umratan" },
-          "translate-id": { "type": "string", "example": "Ya Allah, aku penuhi panggilan-Mu untuk umrah." }
+          "translate_id": { "type": "string", "example": "Ya Allah, aku penuhi panggilan-Mu untuk umrah." }
         }
       },
       "ContentMessageResponse": {
@@ -141,14 +141,7 @@
           "code": { "type": "number", "example": 200 },
           "status": { "type": "string", "example": "OK" },
           "data": {
-            "type": "object",
-            "properties": {
-              "id": { "type": "integer", "example": 1 },
-              "name": { "type": "string", "example": "Niat Umrah dari Miqat" },
-              "arabic": { "type": "string", "example": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً" },
-              "latin": { "type": "string", "example": "Labbaikallaahumma 'umratan" },
-              "translate-id": { "type": "string", "example": "Ya Allah, aku penuhi panggilan-Mu untuk umrah." }
-            }
+            "$ref": "#/components/schemas/ContentItemResponse"
           }
         }
       },
@@ -167,7 +160,7 @@
             "type": "string",
             "example": "Labbaikallaahumma 'umratan"
           },
-          "translate-id": {
+          "translate_id": {
             "type": "string",
             "example": "Ya Allah, aku penuhi panggilan-Mu untuk umrah."
           }
@@ -175,8 +168,14 @@
       }
     },
     "parameters": {
-      "AuthorizationHeader": {
+      "BearerAuthorizationHeader": {
         "name": "Authorization",
+        "in": "header",
+        "required": true,
+        "schema": { "type": "string" }
+      },
+      "ApiKeyAuthorizationHeader": {
+        "name": "X-API-KEY",
         "in": "header",
         "required": true,
         "schema": { "type": "string" }
@@ -186,12 +185,7 @@
   "paths": {
     "/api/users": {
       "post": {
-        "tags": ["user"],
-        "security": [
-          {
-            "ApiKeyAuth": []
-          }
-        ],
+        "tags": ["User"],
         "summary": "Register User",
         "requestBody": {
           "required": true,
@@ -223,12 +217,7 @@
     },
     "/api/users/login": {
       "post": {
-        "tags": ["user"],
-        "security": [
-          {
-            "ApiKeyAuth": []
-          }
-        ],
+        "tags": ["User"],
         "summary": "Login User",
         "requestBody": {
           "required": true,
@@ -260,18 +249,15 @@
     },
     "/api/users/current": {
       "patch": {
-        "tags": ["user"],
+        "tags": ["User"],
         "security": [
-          {
-            "ApiKeyAuth": []
-          },
           {
             "BearerAuth": []
           }
         ],
         "summary": "Update User",
         "parameters": [
-          { "$ref": "#/components/parameters/AuthorizationHeader" }
+          { "$ref": "#/components/parameters/BearerAuthorizationHeader"}
         ],
         "requestBody": {
           "content": {
@@ -300,18 +286,15 @@
         }
       },
       "get": {
-        "tags": ["user"],
+        "tags": ["User"],
         "security": [
-          {
-            "ApiKeyAuth": []
-          },
           {
             "BearerAuth": []
           }
         ],
         "summary": "Get Current User",
         "parameters": [
-          { "$ref": "#/components/parameters/AuthorizationHeader" }
+          { "$ref": "#/components/parameters/BearerAuthorizationHeader"}
         ],
         "responses": {
           "200": {
@@ -335,18 +318,15 @@
     },
     "/api/users/logout": {
       "delete": {
-        "tags": ["user"],
+        "tags": ["User"],
         "security": [
-          {
-            "ApiKeyAuth": []
-          },
           {
             "BearerAuth": []
           }
         ],
         "summary": "Logout User",
         "parameters": [
-          { "$ref": "#/components/parameters/AuthorizationHeader" }
+          { "$ref": "#/components/parameters/BearerAuthorizationHeader"}
         ],
         "responses": {
           "200": {
@@ -377,6 +357,9 @@
           }
         ],
         "summary": "Add Content",
+        "parameters": [
+          { "$ref": "#/components/parameters/ApiKeyAuthorizationHeader"}
+        ],
         "requestBody": {
           "required": true,
           "content": {
@@ -416,6 +399,9 @@
           { "ApiKeyAuth": [] }
         ],
         "summary": "Retrieve All Content",
+        "parameters": [
+          { "$ref": "#/components/parameters/ApiKeyAuthorizationHeader"}
+        ],
         "responses": {
           "200": {
             "description": "Contents retrieved successfully",
@@ -428,10 +414,28 @@
                     "status": { "type": "string", "example": "OK" },
                     "data": {
                       "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/ContentItemResponse"
-                      }
+                      "items": { "$ref": "#/components/schemas/ContentItemResponse" }
                     }
+                  },
+                  "example": {
+                    "code": 200,
+                    "status": "OK",
+                    "data": [
+                      {
+                        "id": 1,
+                        "name": "Niat Umrah dari Miqat",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً",
+                        "latin": "Labbaikallaahumma 'umratan",
+                        "translate_id": "Ya Allah, aku penuhi panggilan-Mu untuk umrah."
+                      },
+                      {
+                        "id": 2,
+                        "name": "Niat Umrah dari Miqat",
+                        "arabic": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً",
+                        "latin": "Labbaikallaahumma 'umratan",
+                        "translate_id": "Ya Allah, aku penuhi panggilan-Mu untuk umrah."
+                      }
+                    ]
                   }
                 }
               }
@@ -456,7 +460,8 @@
         ],
         "summary": "Get Content by ID",
         "parameters": [
-          { "name": "contentId", "in": "path", "required": true, "schema": { "type": "integer" } }
+          { "name": "contentId", "in": "path", "required": true, "schema": { "type": "integer" } },
+          { "$ref": "#/components/parameters/ApiKeyAuthorizationHeader"}
         ],
         "responses": {
           "200": {
@@ -484,7 +489,8 @@
         ],
         "summary": "Update Content by ID",
         "parameters": [
-          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+          { "name": "contentId", "in": "path", "required": true, "schema": { "type": "integer" } },
+          { "$ref": "#/components/parameters/ApiKeyAuthorizationHeader"}
         ],
         "requestBody": {
           "required": true,
@@ -496,7 +502,7 @@
                   "name": { "type": "string", "example": "Updated Content Name" },
                   "arabic": { "type": "string", "example": "Updated Arabic Text" },
                   "latin": { "type": "string", "example": "Updated Latin Text" },
-                  "translate-id": { "type": "string", "example": "Updated translation" }
+                  "translate_id": { "type": "string", "example": "Updated translation" }
                 }
               }
             }
@@ -528,7 +534,8 @@
         ],
         "summary": "Delete Content by ID",
         "parameters": [
-          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+          { "name": "contentId", "in": "path", "required": true, "schema": { "type": "integer" } },
+          { "$ref": "#/components/parameters/ApiKeyAuthorizationHeader"}
         ],
         "responses": {
           "200": {
