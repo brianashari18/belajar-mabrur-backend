@@ -1,0 +1,10 @@
+POST http://192.168.18.11:3000/api/contents
+Content-Type: application/json
+X-API-KEY: rahasia
+
+{
+  "name": "test",
+  "arabic": "test",
+  "latin": "test",
+  "translate_id": "test"
+}

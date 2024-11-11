@@ -22,3 +22,13 @@ model User {
 
   @@map("users")
 }
+
+model Content {
+  id Int @id @db.Int @default(autoincrement())
+  name String @db.VarChar(100)
+  arabic String @db.VarChar(100)
+  latin String @db.VarChar(100)
+  translate_id String @db.VarChar(100)
+
+  @@map("contents")
+}

@@ -16,7 +16,7 @@ describe('POST /api/users', function () {
                 username: "test",
                 password: "rahasia",
                 name: "test",
-            })
+            });
 
         expect(result.body.code).toBe(200);
         expect(result.body.status).toBe("OK");

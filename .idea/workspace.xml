@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbdb226d-13c5-44f2-a4fd-e5a86a3cebf7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/web.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/web.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/auth-middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/auth-middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/route/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test-util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test-util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/user.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/user.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,49 +50,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP Request.test | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test | Delete.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test | GET request to example server.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test | Get (1).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test | Get.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test | Login (1).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test | Login.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.test | Update.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.DELETE /api/users/logout.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.DELETE /api/users/logout.should reject logout if token is invalid.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.GET /api/users/current.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.GET /api/users/current.should can get current user.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.PATCH /api/users/current.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.PATCH /api/users/current.should can update user.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.POST /api/users.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.POST /api/users.should can register new user.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.POST /api/users.should reject if request is invalid.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.POST /api/users/login.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.POST /api/users/login.should can login.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.POST /api/users/login.should reject login if password is wrong.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.user.test.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/src/route&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/node_modules/jest&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.content | #1.executor": "Run",
+    "HTTP Request.test | #1.executor": "Run",
+    "HTTP Request.test | Delete.executor": "Run",
+    "HTTP Request.test | GET request to example server.executor": "Run",
+    "HTTP Request.test | Get (1).executor": "Run",
+    "HTTP Request.test | Get.executor": "Run",
+    "HTTP Request.test | Login (1).executor": "Run",
+    "HTTP Request.test | Login.executor": "Run",
+    "HTTP Request.test | Update.executor": "Run",
+    "Jest.DELETE /api/users/logout.executor": "Run",
+    "Jest.DELETE /api/users/logout.should reject logout if token is invalid.executor": "Run",
+    "Jest.GET /api/users/current.executor": "Run",
+    "Jest.GET /api/users/current.should can get current user.executor": "Run",
+    "Jest.PATCH /api/users/current.executor": "Run",
+    "Jest.PATCH /api/users/current.should can update user.executor": "Run",
+    "Jest.POST /api/contents.should can add new content.executor": "Run",
+    "Jest.POST /api/users.executor": "Run",
+    "Jest.POST /api/users.should can register new user.executor": "Run",
+    "Jest.POST /api/users.should reject if request is invalid.executor": "Run",
+    "Jest.POST /api/users/login.executor": "Run",
+    "Jest.POST /api/users/login.should can login.executor": "Run",
+    "Jest.POST /api/users/login.should reject login if password is wrong.executor": "Run",
+    "Jest.user.test.js.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/src/route",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/node_modules/jest",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Brian Anashari\Desktop\MyDream\project\belajar_mabrur_backend\src\route" />
@@ -93,11 +104,11 @@
       <recent name="C:\Users\Brian Anashari\Desktop\MyDream\project\belajar_mabrur_backend\src" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.test | Login (1)">
-    <configuration name="test | Delete" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/test.http" index="5" requestIdentifier="Delete" runType="Run single request">
+  <component name="RunManager" selected="Jest.POST /api/contents.should can add new content">
+    <configuration name="content | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/content.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test | Get (1)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/test.http" index="3" requestIdentifier="Get" runType="Run single request">
+    <configuration name="test | Delete" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/test.http" index="5" requestIdentifier="Delete" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="test | Login (1)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/test.http" index="2" requestIdentifier="Login" runType="Run single request">
@@ -106,16 +117,26 @@
     <configuration name="test | Update" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/test.http" index="4" requestIdentifier="Update" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/test.http" requestIdentifier="#1" runType="Run single request">
+    <configuration name="POST /api/contents.should can add new content" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/content.test.js" />
+      <test-names>
+        <test-name value="POST /api/contents" />
+        <test-name value="should can add new content" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.POST /api/contents.should can add new content" />
+        <item itemvalue="HTTP Request.content | #1" />
         <item itemvalue="HTTP Request.test | Login (1)" />
         <item itemvalue="HTTP Request.test | Delete" />
         <item itemvalue="HTTP Request.test | Update" />
-        <item itemvalue="HTTP Request.test | Get (1)" />
-        <item itemvalue="HTTP Request.test | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +160,8 @@
       <workItem from="1731108448556" duration="7969000" />
       <workItem from="1731145368179" duration="1833000" />
       <workItem from="1731271905274" duration="6975000" />
-      <workItem from="1731281005238" duration="1788000" />
+      <workItem from="1731281005238" duration="3854000" />
+      <workItem from="1731285683314" duration="3517000" />
     </task>
     <servers />
   </component>

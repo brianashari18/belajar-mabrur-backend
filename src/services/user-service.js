@@ -9,7 +9,6 @@ import {prismaClient} from "../application/database.js";
 import {ResponseError} from "../error/response-error.js";
 import bcrypt from "bcrypt";
 import { v4 as uuid } from "uuid";
-import {request} from "express";
 
 const register = async (request) => {
     const user = validate(registerUserValidation, request);

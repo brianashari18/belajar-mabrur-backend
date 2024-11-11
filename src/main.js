@@ -1,8 +1,8 @@
 import {web} from "./application/web.js";
 import {logger} from "./application/logging.js";
 
-const host = '192.168.18.11';
-const port = 3000;
+const host = process.env.HOST;
+const port = process.env.PORT;
 
 web.listen(port, host, () => {
     logger.info(`App started on http://${host}:${port}`);
