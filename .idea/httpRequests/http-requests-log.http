@@ -1,3 +1,301 @@
+GET http://192.168.18.11:3000/api/contents
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T113629.200.json
+
+###
+
+GET http://192.168.18.11:3000/api/contents
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T113532.200.json
+
+###
+
+GET http://192.168.18.11:3000/api/contents
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T113447.200.json
+
+###
+
+GET http://192.168.18.11:3000/api/contents
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T113158.200.json
+
+###
+
+DELETE http://192.168.18.11:3000/api/contents/76
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T113130.200.json
+
+###
+
+DELETE http://192.168.18.11:3000/api/contents/67
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T113010.404.html
+
+###
+
+GET http://192.168.18.11:3000/api/contents
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T113006.200.json
+
+###
+
+DELETE http://192.168.18.11:3000/api/contents/67
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T113002.404.html
+
+###
+
+DELETE http://192.168.18.11:3000/api/contents/76
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T112835.404.html
+
+###
+
+PATCH http://192.168.18.11:3000/api/contents/76
+X-API-KEY: rahasia
+Content-Type: application/json
+Content-Length: 123
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "updatedName",
+  "arabic": "updatedArabic",
+  "latin": "updatedLatin",
+  "translate_id": "updatedTranslateId"
+}
+
+<> 2024-11-12T112822.200.json
+
+###
+
+GET http://192.168.18.11:3000/api/contents/76
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T112813.200.json
+
+###
+
+GET http://192.168.18.11:3000/api/contents
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T112801.200.json
+
+###
+
+DELETE http://192.168.18.11:3000/api/contents/76
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T112639.404.html
+
+###
+
+GET http://192.168.18.11:3000/api/contents
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T112633.200.json
+
+###
+
+DELETE http://192.168.18.11:3000/api/contents/76
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T112608.404.html
+
+###
+
+POST http://192.168.18.11:3000/api/contents
+Content-Type: application/json
+X-API-KEY: rahasia
+Content-Length: 86
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "test1",
+  "arabic": "test",
+  "latin": "test",
+  "translate_id": "test"
+}
+
+<> 2024-11-12T112539.200.json
+
+###
+
+GET http://192.168.18.11:3000/api/contents
+X-API-KEY: rahasia
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-11-12T112531.200.json
+
+###
+
+PATCH http://192.168.18.11:3000/api/contents/67
+X-API-KEY: rahasia
+Content-Type: application/json
+Content-Length: 123
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "updatedName",
+  "arabic": "updatedArabic",
+  "latin": "updatedLatin",
+  "translate_id": "updatedTranslateId"
+}
+
+<> 2024-11-12T112053.200.json
+
+###
+
+PATCH http://192.168.18.11:3000/api/contents/67
+X-API-KEY: rahasia
+Content-Type: application/json
+Content-Length: 123
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "updatedName",
+  "arabic": "updatedArabic",
+  "latin": "updatedLatin",
+  "translate_id": "updatedTranslateId"
+}
+
+<> 2024-11-12T111949.500.json
+
+###
+
+PATCH http://192.168.18.11:3000/api/contents/67
+X-API-KEY: rahasia
+Content-Type: application/json
+Content-Length: 123
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "updatedName",
+  "arabic": "updatedArabic",
+  "latin": "updatedLatin",
+  "translate_id": "updatedTranslateId"
+}
+
+<> 2024-11-12T111927.500.json
+
+###
+
+PATCH http://192.168.18.11:3000/api/contents/67
+X-API-KEY: rahasia
+Content-Type: application/json
+Content-Length: 123
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "updatedName",
+  "arabic": "updatedArabic",
+  "latin": "updatedLatin",
+  "translate_id": "updatedTranslateId"
+}
+
+<> 2024-11-12T111844.500.json
+
+###
+
+PATCH http://192.168.18.11:3000/api/contents/67
+X-API-KEY: rahasia
+Content-Type: application/json
+Content-Length: 123
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "updatedName",
+  "arabic": "updatedArabic",
+  "latin": "updatedLatin",
+  "translate_id": "updatedTranslateId"
+}
+
+<> 2024-11-12T111756.500.json
+
+###
+
 POST http://192.168.18.11:3000/api/contents
 Content-Type: application/json
 X-API-KEY: rahasia
@@ -399,358 +697,6 @@ Accept: */*
 }
 
 <> 2024-11-11T083730.401.json
-
-###
-
-POST http://192.168.18.11:3000/api/contents
-Content-Type: application/json
-X-API-KEY: rahasia
-Content-Length: 85
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "test",
-  "arabic": "test",
-  "latin": "test",
-  "translate_id": "test"
-}
-
-<> 2024-11-11T083545.200.json
-
-###
-
-POST http://192.168.18.11:3000/api/contents
-Content-Type: application/json
-X-API-KEY: rahasia
-Content-Length: 85
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "test",
-  "arabic": "test",
-  "latin": "test",
-  "translate_id": "test"
-}
-
-<> 2024-11-11T082222.401.json
-
-###
-
-POST http://192.168.18.11:3000/api/contents
-Content-Type: application/json
-X-API-KEY: rahasia
-Content-Length: 85
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "test",
-  "arabic": "test",
-  "latin": "test",
-  "translate_id": "test"
-}
-
-<> 2024-11-11T082028.200.json
-
-###
-
-POST http://192.168.18.11:3000/api/contents
-Content-Type: application/json
-X-API-KEY: rahasia
-Content-Length: 85
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "test",
-  "arabic": "test",
-  "latin": "test",
-  "translate_id": "test"
-}
-
-<> 2024-11-11T081909.401.json
-
-###
-
-POST http://192.168.18.11:3000/api/contents
-Content-Type: application/json
-X-API-KEY: rahasia
-Content-Length: 85
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "test",
-  "arabic": "test",
-  "latin": "test",
-  "translate_id": "test"
-}
-
-<> 2024-11-11T081848.401.json
-
-###
-
-POST http://192.168.18.11:3000/api/contents
-Content-Type: application/json
-X-API-KEY: rahasia
-Content-Length: 85
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "test",
-  "arabic": "test",
-  "latin": "test",
-  "translate_id": "test"
-}
-
-<> 2024-11-11T081844.401.json
-
-###
-
-POST http://192.168.18.11:3000/api/contents
-Content-Type: application/json
-X-API-KEY: rahasia
-Content-Length: 85
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "test",
-  "arabic": "test",
-  "latin": "test",
-  "translate_id": "test"
-}
-
-<> 2024-11-11T081346.401.json
-
-###
-
-POST http://192.168.18.11:3000/api/users/login
-Content-Type: application/json
-Content-Length: 53
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "test",
-  "password": "test_update"
-}
-
-<> 2024-11-09T164432.200.json
-
-###
-
-POST http://192.168.18.11:3000/api/users/login
-Content-Type: application/json
-Content-Length: 53
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "test",
-  "password": "test_update"
-}
-
-<> 2024-11-09T164404.500.json
-
-###
-
-DELETE http://192.168.18.11:3000/api/users/logout
-Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-11-09T100738.401.json
-
-###
-
-PATCH http://192.168.18.11:3000/api/users/current
-Authorization: 8fa7bf5f-9f29-49d0-8161-e02e088cec8f
-Content-Type: application/json
-Content-Length: 56
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "test_update",
-  "password": "test_update"
-}
-
-<> 2024-11-09T090952.200.json
-
-###
-
-PATCH http://192.168.18.11:3000/api/users/current
-Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
-Content-Type: application/json
-Content-Length: 56
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "name": "test_update",
-  "password": "test_update"
-}
-
-<> 2024-11-09T090945.401.json
-
-###
-
-GET http://192.168.18.11:3000/api/users/current
-Authorization: 8fa7bf5f-9f29-49d0-8161-e02e088cec8f
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-11-09T090939.200.json
-
-###
-
-POST http://192.168.18.11:3000/api/users/login
-Content-Type: application/json
-Content-Length: 53
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "test",
-  "password": "test_update"
-}
-
-<> 2024-11-09T090912.200.json
-
-###
-
-GET http://192.168.18.11:3000/api/users/current
-Authorization: 4d434e17-b77a-474b-afa6-768c79e306cb
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-11-09T090910.401.json
-
-###
-
-POST http://192.168.18.11:3000/api/users/login
-Content-Type: application/json
-Content-Length: 53
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "test",
-  "password": "test_update"
-}
-
-<> 2024-11-09T090906.200.json
-
-###
-
-POST http://192.168.18.11:3000/api/users
-Content-Type: application/json
-Content-Length: 64
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "test",
-  "password": "test",
-  "name": "test"
-}
-
-<> 2024-11-09T090857.500.json
-
-###
-
-POST http://192.168.18.11:3000/api/users
-Content-Type: application/json
-Content-Length: 64
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "test",
-  "password": "test",
-  "name": "test"
-}
-
-<> 2024-11-09T090848.500.json
-
-###
-
-GET http://192.168.18.11:3000/api/users/current
-Authorization: 4d434e17-b77a-474b-afa6-768c79e306cb
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-11-09T085610.200.json
-
-###
-
-POST http://192.168.18.11:3000/api/users/login
-Content-Type: application/json
-Content-Length: 53
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "test",
-  "password": "test_update"
-}
-
-<> 2024-11-09T085459.200.json
-
-###
-
-GET http://192.168.18.11:3000/api/users/current
-Authorization: 0f3097b1-ab1a-4a2b-a425-867007ba98db
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-11-09T085455.401.json
-
-###
-
-POST http://192.168.18.11:3000/api/users/login
-Content-Type: application/json
-Content-Length: 53
-User-Agent: IntelliJ HTTP Client/WebStorm 2024.2.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "test",
-  "password": "test_update"
-}
-
-<> 2024-11-09T085453.200.json
 
 ###
 

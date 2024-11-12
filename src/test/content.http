@@ -15,11 +15,11 @@ GET http://192.168.18.11:3000/api/contents
 X-API-KEY: rahasia
 
 ### Get
-GET http://192.168.18.11:3000/api/contents/56
+GET http://192.168.18.11:3000/api/contents/76
 X-API-KEY: rahasia
 
 ### Update
-PATCH http://192.168.18.11:3000/api/contents/67
+PATCH http://192.168.18.11:3000/api/contents/76
 X-API-KEY: rahasia
 Content-Type: application/json
 
@@ -29,3 +29,7 @@ Content-Type: application/json
   "latin": "updatedLatin",
   "translate_id": "updatedTranslateId"
 }
+
+### Delete
+DELETE http://192.168.18.11:3000/api/contents/76
+X-API-KEY: rahasia

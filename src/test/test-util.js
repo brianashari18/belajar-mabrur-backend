@@ -37,7 +37,7 @@ export const removeTestContent = async () => {
 }
 
 export const createTestContent = async () => {
-    await prismaClient.content.create({
+    return prismaClient.content.create({
         data: {
             name: "test",
             arabic: "test",

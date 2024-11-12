@@ -1,4 +1,0 @@
-{
-  "status": "INTERNAL SERVER ERROR",
-  "errors": "Class constructor ResponseError cannot be invoked without 'new'"
-}

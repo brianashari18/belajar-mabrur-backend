@@ -1,0 +1,27 @@
+{
+  "code": 200,
+  "status": "OK",
+  "data": [
+    {
+      "id": 67,
+      "name": "updatedName",
+      "arabic": "updatedArabic",
+      "latin": "updatedLatin",
+      "translate_id": "updatedTranslateId"
+    },
+    {
+      "id": 68,
+      "name": "test",
+      "arabic": "test",
+      "latin": "test",
+      "translate_id": "test"
+    },
+    {
+      "id": 69,
+      "name": "test",
+      "arabic": "test",
+      "latin": "test",
+      "translate_id": "test"
+    }
+  ]
+}

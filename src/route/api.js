@@ -14,6 +14,7 @@ contentRouter.post("/api/contents", apiKeyMiddleware, contentController.add);
 contentRouter.get("/api/contents", apiKeyMiddleware, contentController.getAll);
 contentRouter.get("/api/contents/:contentId", apiKeyMiddleware, contentController.get);
 contentRouter.patch("/api/contents/:contentId", apiKeyMiddleware, contentController.update);
+contentRouter.delete("/api/contents/:contentId", apiKeyMiddleware, contentController.remove);
 
 export {
     userRouter,

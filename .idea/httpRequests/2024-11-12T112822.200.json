@@ -1,0 +1,11 @@
+{
+  "code": 200,
+  "status": "OK",
+  "data": {
+    "id": 76,
+    "name": "updatedName",
+    "arabic": "updatedArabic",
+    "latin": "updatedLatin",
+    "translate_id": "updatedTranslateId"
+  }
+}

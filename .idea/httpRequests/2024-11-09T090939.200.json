@@ -1,9 +1,0 @@
-{
-  "code": 200,
-  "status": "OK",
-  "data": {
-    "username": "test",
-    "name": "test_update",
-    "role": "user"
-  }
-}

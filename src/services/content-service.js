@@ -2,9 +2,8 @@ import {validate} from "../validation/validation.js";
 import {addContentValidation, updateContentValidation} from '../validation/content-validation.js';
 import {prismaClient} from "../application/database.js";
 import { ResponseError} from "../error/response-error.js";
-import {logger} from "../application/logging.js";
 import {NotFoundError} from "../error/notfound-error.js";
-import {re} from "prisma/build/child.js";
+import {logger} from "../application/logging.js";
 
 const add = async (request) => {
     const content = await validate(addContentValidation, request);
@@ -80,10 +79,12 @@ const update = async (request) => {
         throw new NotFoundError(404, "Content not found");
     }
 
-    content.name = reqBody.data.name;
-    content.arabic = reqBody.data.arabic;
-    content.latin = reqBody.data.latin;
-    content.translate_id = reqBody.data.translate_id;
+    logger.info(reqBody);
+
+    content.name = reqBody.name;
+    content.arabic = reqBody.arabic;
+    content.latin = reqBody.latin;
+    content.translate_id = reqBody.translate_id;
 
     return prismaClient.content.update({
         where: {
@@ -93,9 +94,30 @@ const update = async (request) => {
     });
 }
 
+const remove = async (request) => {
+    const reqParams = request.params;
+    const id = parseInt(reqParams.contentId, 10);
+    const content = await prismaClient.content.findUnique({
+        where: {
+            id: id
+        }
+    })
+
+    if (!content) {
+        throw new NotFoundError(404, "Content not found");
+    }
+
+    return prismaClient.content.delete({
+        where: {
+            id: id
+        },
+    });
+}
+
 export default {
     add,
     getAll,
     get,
-    update
+    update,
+    remove
 }

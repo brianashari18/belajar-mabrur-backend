@@ -52,9 +52,22 @@ const update = async (req, res, next) => {
     }
 }
 
+const remove = async (req, res, next) => {
+    try {
+        const result = await contentService.remove(req);
+        res.status(200).json({
+            code: 200,
+            status: 'OK'
+        })
+    } catch (e) {
+        next(e);
+    }
+}
+
 export default {
     add,
     getAll,
     get,
-    update
+    update,
+    remove
 }

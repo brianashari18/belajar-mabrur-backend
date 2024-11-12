@@ -175,7 +175,7 @@ describe('PATCH /api/contents/:contentId', () => {
     it('should return 404 if content not found for update', async () => {
         const nonExistentId = 99999;
         const result = await supertest(web)
-            .patch(`/api/contents/67`)
+            .patch(`/api/contents/${nonExistentId}`)
             .set({'X-API-KEY': process.env.API_KEY})
             .send({
                 name: "newName",

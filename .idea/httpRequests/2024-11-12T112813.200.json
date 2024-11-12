@@ -2,7 +2,8 @@
   "code": 200,
   "status": "OK",
   "data": {
-    "name": "test",
+    "id": 76,
+    "name": "test1",
     "arabic": "test",
     "latin": "test",
     "translate_id": "test"
