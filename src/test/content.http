@@ -4,10 +4,12 @@ Content-Type: application/json
 X-API-KEY: rahasia
 
 {
-  "name": "test1",
+  "name": "test",
+  "category": "test",
   "arabic": "test",
   "latin": "test",
-  "translate_id": "test"
+  "translate_id": "test",
+  "description": "test"
 }
 
 ### Get All
@@ -25,9 +27,11 @@ Content-Type: application/json
 
 {
   "name": "updatedName",
+  "category": "updatedCategory",
   "arabic": "updatedArabic",
   "latin": "updatedLatin",
-  "translate_id": "updatedTranslateId"
+  "translate_id": "updatedTranslateId",
+  "description": "updatedDescription"
 }
 
 ### Delete

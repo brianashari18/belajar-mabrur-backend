@@ -15,9 +15,11 @@ describe('POST /api/contents', function() {
             .set({'X-API-KEY': process.env.API_KEY, 'Content-Type': 'application/json'})
             .send({
                 name: "test",
+                category: "test",
                 arabic: "test",
                 latin: "test",
-                translate_id: "test"
+                translate_id: "test",
+                description: "test"
             });
 
         logger.info(result.body);
@@ -25,9 +27,11 @@ describe('POST /api/contents', function() {
         expect(result.body.code).toBe(200);
         expect(result.body.status).toBe("OK");
         expect(result.body.data.name).toBe("test");
+        expect(result.body.data.category).toBe("test");
         expect(result.body.data.arabic).toBe("test");
         expect(result.body.data.latin).toBe("test");
         expect(result.body.data.translate_id).toBe("test");
+        expect(result.body.data.description).toBe("test");
     })
 
     it('should cannot add new content', async () => {
@@ -36,9 +40,11 @@ describe('POST /api/contents', function() {
             .set({'X-API-KEY': 'salah', 'Content-Type': 'application/json'})
             .send({
                 name: "test",
+                category: "test",
                 arabic: "test",
                 latin: "test",
-                translate_id: "test"
+                translate_id: "test",
+                description: "test"
             });
 
         logger.info(result);
@@ -79,9 +85,11 @@ describe('GET /api/contents', () => {
 })
 
 describe('GET /api/contents/:contentId', () => {
+    let testContent;
+
     // Setup: Create a test content item before each test
     beforeEach(async () => {
-        await createTestContent(); // Assuming this function returns the created content with an ID
+        testContent = await createTestContent(); // Assuming this function returns the created content with an ID
     });
 
     // Cleanup: Remove the test content item after each test
@@ -96,18 +104,19 @@ describe('GET /api/contents/:contentId', () => {
 
     it('should get content by ID', async () => {
         const result = await supertest(web)
-            .get(`/api/contents/67`)
+            .get(`/api/contents/${testContent.id}`)
             .set({'X-API-KEY': process.env.API_KEY});
 
         logger.info(result.body);
 
-        expect(result.status).toBe(200);
+        expect(result.body.code).toBe(200);
         expect(result.body.status).toBe("OK");
-        expect(result.body.data.id).toBe(67);
-        expect(result.body.data.name).toBe("test1");
+        expect(result.body.data.name).toBe("test");
+        expect(result.body.data.category).toBe("test");
         expect(result.body.data.arabic).toBe("test");
         expect(result.body.data.latin).toBe("test");
         expect(result.body.data.translate_id).toBe("test");
+        expect(result.body.data.description).toBe("test");
     });
 
     it('should return 404 if content not found', async () => {
@@ -141,7 +150,7 @@ describe('PATCH /api/contents/:contentId', () => {
 
     // Setup: Create a test content item before each test
     beforeEach(async () => {
-        await createTestContent(); // Assuming this returns the created content with an ID
+        testContent = await createTestContent(); // Assuming this returns the created content with an ID
     });
 
     // Cleanup: Remove the test content item after each test
@@ -152,24 +161,28 @@ describe('PATCH /api/contents/:contentId', () => {
     it('should update content by ID', async () => {
         const updatedData = {
             name: "updatedName",
+            category: "updatedCategory",
             arabic: "updatedArabic",
             latin: "updatedLatin",
-            translate_id: "updatedTranslateId"
+            translate_id: "updatedTranslateId",
+            description: "updatedDescription"
         };
 
         const result = await supertest(web)
-            .patch(`/api/contents/67`)
+            .patch(`/api/contents/${testContent.id}`)
             .set({'X-API-KEY': process.env.API_KEY, 'Content-Type': 'application/json'})
             .send(updatedData);
 
         logger.info(result.body);
 
-        expect(result.status).toBe(200);
+        expect(result.body.code).toBe(200);
         expect(result.body.status).toBe("OK");
         expect(result.body.data.name).toBe("updatedName");
+        expect(result.body.data.category).toBe("updatedCategory");
         expect(result.body.data.arabic).toBe("updatedArabic");
         expect(result.body.data.latin).toBe("updatedLatin");
         expect(result.body.data.translate_id).toBe("updatedTranslateId");
+        expect(result.body.data.description).toBe("updatedDescription");
     });
 
     it('should return 404 if content not found for update', async () => {
@@ -178,10 +191,12 @@ describe('PATCH /api/contents/:contentId', () => {
             .patch(`/api/contents/${nonExistentId}`)
             .set({'X-API-KEY': process.env.API_KEY})
             .send({
-                name: "newName",
-                arabic: "newArabic",
-                latin: "newLatin",
-                translate_id: "newTranslateId"
+                name: "updatedName",
+                category: "updatedCategory",
+                arabic: "updatedArabic",
+                latin: "updatedLatin",
+                translate_id: "updatedTranslateId",
+                description: "updatedDescription"
             });
 
         logger.info(result.body);
@@ -196,10 +211,12 @@ describe('PATCH /api/contents/:contentId', () => {
             .patch(`/api/contents/67`)
             .set({'X-API-KEY': 'invalid-api-key'})
             .send({
-                name: "newName",
-                arabic: "newArabic",
-                latin: "newLatin",
-                translate_id: "newTranslateId"
+                name: "updatedName",
+                category: "updatedCategory",
+                arabic: "updatedArabic",
+                latin: "updatedLatin",
+                translate_id: "updatedTranslateId",
+                description: "updatedDescription"
             });
 
         logger.info(result.body);

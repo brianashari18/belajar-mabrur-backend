@@ -1,0 +1,51 @@
+{
+  "code": 200,
+  "status": "OK",
+  "data": [
+    {
+      "id": 67,
+      "name": "updatedName",
+      "arabic": "updatedArabic",
+      "latin": "updatedLatin",
+      "translate_id": "updatedTranslateId",
+      "category": "updatedCategory",
+      "description": "updatedDescription"
+    },
+    {
+      "id": 71,
+      "name": "test",
+      "arabic": "test",
+      "latin": "test",
+      "translate_id": "test",
+      "category": "test",
+      "description": "test"
+    },
+    {
+      "id": 72,
+      "name": "test",
+      "arabic": "test",
+      "latin": "test",
+      "translate_id": "test",
+      "category": "test",
+      "description": "test"
+    },
+    {
+      "id": 73,
+      "name": "test",
+      "arabic": "test",
+      "latin": "test",
+      "translate_id": "test",
+      "category": "test",
+      "description": "test"
+    },
+    {
+      "id": 74,
+      "name": "test",
+      "arabic": "test",
+      "latin": "test",
+      "translate_id": "test",
+      "category": "test",
+      "description": "test"
+    }
+  ]
+}

@@ -40,9 +40,11 @@ export const createTestContent = async () => {
     return prismaClient.content.create({
         data: {
             name: "test",
+            category: "test",
             arabic: "test",
             latin: "test",
-            translate_id: "test"
+            translate_id: "test",
+            description: "test"
         }
     })
 }
