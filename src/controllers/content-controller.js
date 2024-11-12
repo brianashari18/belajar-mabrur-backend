@@ -26,7 +26,7 @@ const getAll = async (req, res, next) => {
     }
 }
 
-const get  = async (req, res, next) => {
+const get = async (req, res, next) => {
     try {
         const result = await contentService.get(req);
         res.status(200).json({
@@ -54,10 +54,11 @@ const update = async (req, res, next) => {
 
 const remove = async (req, res, next) => {
     try {
-        const result = await contentService.remove(req);
+        await contentService.remove(req);
         res.status(200).json({
             code: 200,
-            status: 'OK'
+            status: 'OK',
+            message: 'Content successfully deleted'
         })
     } catch (e) {
         next(e);

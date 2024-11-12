@@ -129,10 +129,12 @@
         "type": "object",
         "properties": {
           "id": { "type": "integer", "example": 1 },
+          "category": { "type": "string", "example": "Ihram" },
           "name": { "type": "string", "example": "Niat Umrah dari Miqat" },
-          "arabic": { "type": "string", "example": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً" },
+          "arabic": { "type": "string", "example": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً" },
           "latin": { "type": "string", "example": "Labbaikallaahumma 'umratan" },
-          "translate_id": { "type": "string", "example": "Ya Allah, aku penuhi panggilan-Mu untuk umrah." }
+          "translate_id": { "type": "string", "example": "Ya Allah, aku penuhi panggilan-Mu untuk umrah." },
+          "description": { "type": "string", "example": "Doa ini dibaca ketika seseorang memasuki keadaan ihram untuk umrah, menandakan niat untuk melakukan ibadah umrah." }
         }
       },
       "ContentMessageResponse": {
@@ -141,20 +143,27 @@
           "code": { "type": "number", "example": 200 },
           "status": { "type": "string", "example": "OK" },
           "data": {
-            "$ref": "#/components/schemas/ContentItemResponse"
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ContentItemResponse"
+            }
           }
         }
       },
       "AddUpdateContentRequest": {
         "type": "object",
         "properties": {
+          "category": {
+            "type": "string",
+            "example": "Ihram"
+          },
           "name": {
             "type": "string",
             "example": "Niat Umrah dari Miqat"
           },
           "arabic": {
             "type": "string",
-            "example": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً"
+            "example": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً"
           },
           "latin": {
             "type": "string",
@@ -163,6 +172,10 @@
           "translate_id": {
             "type": "string",
             "example": "Ya Allah, aku penuhi panggilan-Mu untuk umrah."
+          },
+          "description": {
+            "type": "string",
+            "example": "Doa ini dibaca ketika seseorang memasuki keadaan ihram untuk umrah, menandakan niat untuk melakukan ibadah umrah."
           }
         }
       }
@@ -423,17 +436,21 @@
                     "data": [
                       {
                         "id": 1,
+                        "category": "Ihram",
                         "name": "Niat Umrah dari Miqat",
                         "arabic": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً",
                         "latin": "Labbaikallaahumma 'umratan",
-                        "translate_id": "Ya Allah, aku penuhi panggilan-Mu untuk umrah."
+                        "translate_id": "Ya Allah, aku penuhi panggilan-Mu untuk umrah.",
+                        "description": "Doa ini dibaca ketika seseorang memasuki keadaan ihram untuk umrah, menandakan niat untuk melakukan ibadah umrah."
                       },
                       {
                         "id": 2,
+                        "category": "Ihram",
                         "name": "Niat Umrah dari Miqat",
                         "arabic": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً",
                         "latin": "Labbaikallaahumma 'umratan",
-                        "translate_id": "Ya Allah, aku penuhi panggilan-Mu untuk umrah."
+                        "translate_id": "Ya Allah, aku penuhi panggilan-Mu untuk umrah.",
+                        "description": "Doa ini dibaca ketika seseorang memasuki keadaan ihram untuk umrah, menandakan niat untuk melakukan ibadah umrah."
                       }
                     ]
                   }
@@ -497,13 +514,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "name": { "type": "string", "example": "Updated Content Name" },
-                  "arabic": { "type": "string", "example": "Updated Arabic Text" },
-                  "latin": { "type": "string", "example": "Updated Latin Text" },
-                  "translate_id": { "type": "string", "example": "Updated translation" }
-                }
+                "$ref": "#/components/schemas/AddUpdateContentRequest"
               }
             }
           }

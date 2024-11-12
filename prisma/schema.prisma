@@ -24,11 +24,13 @@ model User {
 }
 
 model Content {
-  id Int @id @db.Int @default(autoincrement())
-  name String @db.VarChar(100)
-  arabic String @db.VarChar(100)
-  latin String @db.VarChar(100)
-  translate_id String @db.VarChar(100)
+  id          Int      @id @db.Int @default(autoincrement())
+  name        String   @db.VarChar(100)
+  arabic      String   @db.VarChar(100)
+  latin       String   @db.VarChar(100)
+  translate_id String   @db.VarChar(100)
+  category    String   @db.VarChar(50)
+  description String   @db.Text
 
   @@map("contents")
 }

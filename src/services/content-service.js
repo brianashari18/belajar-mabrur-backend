@@ -1,48 +1,61 @@
-import {validate} from "../validation/validation.js";
-import {addContentValidation, updateContentValidation} from '../validation/content-validation.js';
-import {prismaClient} from "../application/database.js";
-import { ResponseError} from "../error/response-error.js";
-import {NotFoundError} from "../error/notfound-error.js";
-import {logger} from "../application/logging.js";
+import { validate } from "../validation/validation.js";
+import { addUpdateContentValidation } from '../validation/content-validation.js';
+import { prismaClient } from "../application/database.js";
+import { ResponseError } from "../error/response-error.js";
+import { NotFoundError } from "../error/notfound-error.js";
+import { logger } from "../application/logging.js";
 
+// Add Content Function
 const add = async (request) => {
-    const content = await validate(addContentValidation, request);
+    const content = await validate(addUpdateContentValidation, request);
 
     const contentCount = await prismaClient.content.count({
         where: {
             name: content.name,
         }
-    })
+    });
 
     if (contentCount === 1) {
         throw new ResponseError(400, "Name already in use");
     }
 
     return prismaClient.content.create({
-        data: content,
+        data: {
+            name: content.name,
+            arabic: content.arabic,
+            latin: content.latin,
+            translate_id: content.translate_id,
+            category: content.category, // Include category
+            description: content.description // Include description
+        },
         select: {
             id: true,
             name: true,
             arabic: true,
             latin: true,
-            translate_id: true
+            translate_id: true,
+            category: true, // Select category
+            description: true // Select description
         }
-    })
-}
+    });
+};
 
+// Get All Content Function
 const getAll = async (request) => {
-    const content = request;
     return prismaClient.content.findMany({
         select: {
             id: true,
             name: true,
             arabic: true,
             latin: true,
-            translate_id: true
+            translate_id: true,
+            category: true, // Include category
+            description: true // Include description
         }
     });
 };
 
+// Get Content by ID Function
 const get = async (request) => {
     const id = parseInt(request.params.contentId, 10);
     const content = await prismaClient.content.findUnique({
@@ -54,26 +67,29 @@ const get = async (request) => {
             name: true,
             arabic: true,
             latin: true,
-            translate_id: true
+            translate_id: true,
+            category: true, // Include category
+            description: true // Include description
         }
-    })
+    });
 
     if (!content) {
         throw new NotFoundError(404, "Content not found");
     }
 
     return content;
-}
+};
 
+// Update Content Function
 const update = async (request) => {
-    const reqBody = validate(updateContentValidation, request.body);
+    const reqBody = validate(addUpdateContentValidation, request.body);
     const reqParams = request.params;
     const id = parseInt(reqParams.contentId, 10);
     const content = await prismaClient.content.findUnique({
         where: {
             id: id
         }
-    })
+    });
 
     if (!content) {
         throw new NotFoundError(404, "Content not found");
@@ -85,6 +101,8 @@ const update = async (request) => {
     content.arabic = reqBody.arabic;
     content.latin = reqBody.latin;
     content.translate_id = reqBody.translate_id;
+    content.category = reqBody.category; // Update category
+    content.description = reqBody.description; // Update description
 
     return prismaClient.content.update({
         where: {
@@ -92,8 +110,9 @@ const update = async (request) => {
         },
         data: content
     });
-}
+};
 
+// Remove Content Function
 const remove = async (request) => {
     const reqParams = request.params;
     const id = parseInt(reqParams.contentId, 10);
@@ -101,7 +120,7 @@ const remove = async (request) => {
         where: {
             id: id
         }
-    })
+    });
 
     if (!content) {
         throw new NotFoundError(404, "Content not found");
@@ -112,7 +131,7 @@ const remove = async (request) => {
             id: id
         },
     });
-}
+};
 
 export default {
     add,
@@ -120,4 +139,4 @@ export default {
     get,
     update,
     remove
-}
+};

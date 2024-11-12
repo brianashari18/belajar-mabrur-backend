@@ -1,20 +1,14 @@
 import Joi from "joi";
 
-const addContentValidation = Joi.object({
+const addUpdateContentValidation = Joi.object({
     name: Joi.string().max(100).required(),
     arabic: Joi.string().max(100).required(),
     latin: Joi.string().max(100).required(),
     translate_id: Joi.string().max(100).required(),
-});
-
-const updateContentValidation = Joi.object({
-    name: Joi.string().max(100).required(),
-    arabic: Joi.string().max(100).required(),
-    latin: Joi.string().max(100).required(),
-    translate_id: Joi.string().max(100).required(),
+    category: Joi.string().max(50).required(), // Add validation for category
+    description: Joi.string().max(255).required() // Add validation for description
 });
 
 export {
-    addContentValidation,
-    updateContentValidation,
+    addUpdateContentValidation
 }
