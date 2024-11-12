@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbdb226d-13c5-44f2-a4fd-e5a86a3cebf7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-11T083808.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-11T135229.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/content.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/content.http" afterDir="false" />
-    </list>
+    <list default="true" id="cbdb226d-13c5-44f2-a4fd-e5a86a3cebf7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +212,7 @@
       <workItem from="1731397466343" duration="311000" />
       <workItem from="1731398926526" duration="475000" />
       <workItem from="1731428412252" duration="969000" />
-      <workItem from="1731454640547" duration="475000" />
+      <workItem from="1731454640547" duration="828000" />
     </task>
     <servers />
   </component>
