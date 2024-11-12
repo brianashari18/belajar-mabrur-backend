@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbdb226d-13c5-44f2-a4fd-e5a86a3cebf7" name="Changes" comment="" />
+    <list default="true" id="cbdb226d-13c5-44f2-a4fd-e5a86a3cebf7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-11T083808.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-11T135229.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/content.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/content.http" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,77 +44,77 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.content | #1.executor": "Run",
-    "HTTP Request.content | Create.executor": "Run",
-    "HTTP Request.content | Delete.executor": "Run",
-    "HTTP Request.content | Get All.executor": "Run",
-    "HTTP Request.content | Get.executor": "Run",
-    "HTTP Request.content | Update.executor": "Run",
-    "HTTP Request.test | #1.executor": "Run",
-    "HTTP Request.test | Delete.executor": "Run",
-    "HTTP Request.test | GET request to example server.executor": "Run",
-    "HTTP Request.test | Get (1).executor": "Run",
-    "HTTP Request.test | Get.executor": "Run",
-    "HTTP Request.test | Login (1).executor": "Run",
-    "HTTP Request.test | Login.executor": "Run",
-    "HTTP Request.test | Update.executor": "Run",
-    "Jest.DELETE /api/contents/:contentId.executor": "Run",
-    "Jest.DELETE /api/contents/:contentId.should delete content by ID.executor": "Run",
-    "Jest.DELETE /api/users/logout.executor": "Run",
-    "Jest.DELETE /api/users/logout.should reject logout if token is invalid.executor": "Run",
-    "Jest.GET /api/contents.should cannot get all content.executor": "Run",
-    "Jest.GET /api/contents.should get all content.executor": "Run",
-    "Jest.GET /api/contents/:contentId.executor": "Run",
-    "Jest.GET /api/contents/:contentId.should get content by ID.executor": "Run",
-    "Jest.GET /api/contents/:contentId.should return 403 if API key is incorrect.executor": "Run",
-    "Jest.GET /api/contents/:contentId.should return 404 if content not found.executor": "Run",
-    "Jest.GET /api/users/current.executor": "Run",
-    "Jest.GET /api/users/current.should can get current user.executor": "Run",
-    "Jest.PATCH /api/contents/:contentId.executor": "Run",
-    "Jest.PATCH /api/contents/:contentId.should return 403 if API key is incorrect for update.executor": "Run",
-    "Jest.PATCH /api/contents/:contentId.should return 404 if content not found for update.executor": "Run",
-    "Jest.PATCH /api/contents/:contentId.should update content by ID.executor": "Run",
-    "Jest.PATCH /api/users/current.executor": "Run",
-    "Jest.PATCH /api/users/current.should can update user.executor": "Run",
-    "Jest.POST /api/contents.should can add new content.executor": "Run",
-    "Jest.POST /api/contents.should cannot add new content.executor": "Run",
-    "Jest.POST /api/users.executor": "Run",
-    "Jest.POST /api/users.should can register new user.executor": "Run",
-    "Jest.POST /api/users.should reject if request is invalid.executor": "Run",
-    "Jest.POST /api/users/login.executor": "Run",
-    "Jest.POST /api/users/login.should can login.executor": "Run",
-    "Jest.POST /api/users/login.should reject login if password is wrong.executor": "Run",
-    "Jest.content.test.js.executor": "Run",
-    "Jest.user.test.js.executor": "Run",
-    "Node.js.content-controller.js.executor": "Run",
-    "Node.js.content-service.js.executor": "Run",
-    "Node.js.content-validation.js.executor": "Run",
-    "Node.js.database.js.executor": "Run",
-    "Node.js.logging.js.executor": "Run",
-    "Node.js.main.js.executor": "Run",
-    "Node.js.notfound-error.js.executor": "Run",
-    "Node.js.web.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/src/route",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/node_modules/jest",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.content | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.content | Create.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.content | Delete.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.content | Get All.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.content | Get.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.content | Update.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Delete.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | GET request to example server.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Get (1).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Get.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Login (1).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Login.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Update.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.DELETE /api/contents/:contentId.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.DELETE /api/contents/:contentId.should delete content by ID.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.DELETE /api/users/logout.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.DELETE /api/users/logout.should reject logout if token is invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents.should cannot get all content.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents.should get all content.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents/:contentId.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents/:contentId.should get content by ID.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents/:contentId.should return 403 if API key is incorrect.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents/:contentId.should return 404 if content not found.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/users/current.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/users/current.should can get current user.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.PATCH /api/contents/:contentId.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.PATCH /api/contents/:contentId.should return 403 if API key is incorrect for update.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.PATCH /api/contents/:contentId.should return 404 if content not found for update.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.PATCH /api/contents/:contentId.should update content by ID.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.PATCH /api/users/current.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.PATCH /api/users/current.should can update user.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/contents.should can add new content.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/contents.should cannot add new content.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users.should can register new user.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users.should reject if request is invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users/login.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users/login.should can login.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users/login.should reject login if password is wrong.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.content.test.js.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.user.test.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.content-controller.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.content-service.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.content-validation.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.database.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.logging.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.notfound-error.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.web.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/src/route&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Brian Anashari\Desktop\MyDream\project\belajar_mabrur_backend\src\route" />
@@ -118,7 +124,10 @@
       <recent name="C:\Users\Brian Anashari\Desktop\MyDream\project\belajar_mabrur_backend\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.DELETE /api/contents/:contentId">
+  <component name="RunManager" selected="HTTP Request.content | Get All">
+    <configuration name="content | Get All" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/content.http" index="2" requestIdentifier="Get All" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="DELETE /api/contents/:contentId" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -131,7 +140,7 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="GET /api/contents/:contentId.should return 403 if API key is incorrect" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="DELETE /api/contents/:contentId.should delete content by ID" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
@@ -139,8 +148,8 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/test/content.test.js" />
       <test-names>
-        <test-name value="GET /api/contents/:contentId" />
-        <test-name value="should return 403 if API key is incorrect" />
+        <test-name value="DELETE /api/contents/:contentId" />
+        <test-name value="should delete content by ID" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -170,26 +179,13 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="PATCH /api/contents/:contentId.should update content by ID" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/test/content.test.js" />
-      <test-names>
-        <test-name value="PATCH /api/contents/:contentId" />
-        <test-name value="should update content by ID" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.content | Get All" />
+        <item itemvalue="Jest.DELETE /api/contents/:contentId.should delete content by ID" />
         <item itemvalue="Jest.DELETE /api/contents/:contentId" />
         <item itemvalue="Jest.PATCH /api/contents/:contentId.should return 403 if API key is incorrect for update" />
         <item itemvalue="Jest.PATCH /api/contents/:contentId.should return 404 if content not found for update" />
-        <item itemvalue="Jest.PATCH /api/contents/:contentId.should update content by ID" />
-        <item itemvalue="Jest.GET /api/contents/:contentId.should return 403 if API key is incorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +216,9 @@
       <workItem from="1731374925703" duration="1079000" />
       <workItem from="1731377272883" duration="5567000" />
       <workItem from="1731397466343" duration="311000" />
-      <workItem from="1731398926526" duration="406000" />
+      <workItem from="1731398926526" duration="475000" />
+      <workItem from="1731428412252" duration="969000" />
+      <workItem from="1731454640547" duration="475000" />
     </task>
     <servers />
   </component>
