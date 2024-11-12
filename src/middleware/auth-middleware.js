@@ -7,7 +7,7 @@ export const authMiddleware = async (req, res, next) => {
     if (!token) {
         res.status(401).json({
             code: 401,
-            status: "Unauthorized",
+            status: "UNAUTHORIZED",
             errors: "Unauthorized user"
         }).end();
     } else {
@@ -20,7 +20,7 @@ export const authMiddleware = async (req, res, next) => {
         if (!user) {
             res.status(401).json({
                 code: 401,
-                status: "Unauthorized",
+                status: "UNAUTHORIZED",
                 errors: "Unauthorized user"
             }).end();
         } else {

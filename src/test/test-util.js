@@ -35,3 +35,14 @@ export const removeTestContent = async () => {
         }
     })
 }
+
+export const createTestContent = async () => {
+    await prismaClient.content.create({
+        data: {
+            name: "test",
+            arabic: "test",
+            latin: "test",
+            translate_id: "test"
+        }
+    })
+}

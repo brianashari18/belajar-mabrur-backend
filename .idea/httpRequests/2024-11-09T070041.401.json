@@ -1,5 +1,0 @@
-{
-  "code": 401,
-  "status": "BAD REQUEST",
-  "errors": "Username or password wrong"
-}

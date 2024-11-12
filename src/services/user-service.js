@@ -9,6 +9,7 @@ import {prismaClient} from "../application/database.js";
 import {ResponseError} from "../error/response-error.js";
 import bcrypt from "bcrypt";
 import { v4 as uuid } from "uuid";
+import {NotFoundError} from "../error/notfound-error.js";
 
 const register = async (request) => {
     const user = validate(registerUserValidation, request);
@@ -85,7 +86,7 @@ const get = async (username) => {
     });
 
     if (!user) {
-        throw new ResponseError(404, "user is not found");
+        throw new NotFoundError(404, "User is not found");
     }
 
     return user;
@@ -101,7 +102,7 @@ const update = async (request) => {
     });
 
     if (totalUserInDatabase !== 1) {
-        throw new ResponseError(404, "user is not found");
+        throw new NotFoundError(404, "User is not found");
     }
 
     const data = {};
@@ -134,7 +135,7 @@ const logout = async (username) => {
     });
 
     if (!user) {
-        throw new ResponseError(404, "user is not found");
+        throw new NotFoundError(404, "User is not found");
     }
 
     return prismaClient.user.update({

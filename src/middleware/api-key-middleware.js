@@ -5,7 +5,7 @@ export const apiKeyMiddleware = (req, res, next) => {
     if (!apiKey || apiKey !== process.env.API_KEY) {
         res.status(403).json({
             code: 403,
-            status: "Forbidden",
+            status: "FORBIDDEN",
             errors: "Invalid or missing API key"
         }).end();
     } else {

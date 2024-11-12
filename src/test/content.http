@@ -1,10 +1,31 @@
+### Create
 POST http://192.168.18.11:3000/api/contents
 Content-Type: application/json
 X-API-KEY: rahasia
 
 {
-  "name": "test",
+  "name": "test1",
   "arabic": "test",
   "latin": "test",
   "translate_id": "test"
+}
+
+### Get All
+GET http://192.168.18.11:3000/api/contents
+X-API-KEY: rahasia
+
+### Get
+GET http://192.168.18.11:3000/api/contents/56
+X-API-KEY: rahasia
+
+### Update
+PATCH http://192.168.18.11:3000/api/contents/67
+X-API-KEY: rahasia
+Content-Type: application/json
+
+{
+  "name": "updatedName",
+  "arabic": "updatedArabic",
+  "latin": "updatedLatin",
+  "translate_id": "updatedTranslateId"
 }

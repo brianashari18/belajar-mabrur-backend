@@ -5,17 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbdb226d-13c5-44f2-a4fd-e5a86a3cebf7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T064006.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T064127.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T064233.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T064245.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T064248.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T064356.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T064420.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T064433.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T064516.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T064546.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T070041.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T070055.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T082817.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-11-09T082955.200.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/web.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/web.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/content-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/content-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/api-key-middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/api-key-middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/middleware/auth-middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/auth-middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/error-middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/error-middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/route/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/route/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/content-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/content-service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/user-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/content.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/content.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/content.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/content.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/test-util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test-util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/user.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/user.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/user.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validation/content-validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/validation/content-validation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +42,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="OpenAPI" />
-        <option value="JavaScript File" />
         <option value="HTTP Request" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,51 +66,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.content | #1.executor": "Run",
-    "HTTP Request.test | #1.executor": "Run",
-    "HTTP Request.test | Delete.executor": "Run",
-    "HTTP Request.test | GET request to example server.executor": "Run",
-    "HTTP Request.test | Get (1).executor": "Run",
-    "HTTP Request.test | Get.executor": "Run",
-    "HTTP Request.test | Login (1).executor": "Run",
-    "HTTP Request.test | Login.executor": "Run",
-    "HTTP Request.test | Update.executor": "Run",
-    "Jest.DELETE /api/users/logout.executor": "Run",
-    "Jest.DELETE /api/users/logout.should reject logout if token is invalid.executor": "Run",
-    "Jest.GET /api/users/current.executor": "Run",
-    "Jest.GET /api/users/current.should can get current user.executor": "Run",
-    "Jest.PATCH /api/users/current.executor": "Run",
-    "Jest.PATCH /api/users/current.should can update user.executor": "Run",
-    "Jest.POST /api/contents.should can add new content.executor": "Run",
-    "Jest.POST /api/users.executor": "Run",
-    "Jest.POST /api/users.should can register new user.executor": "Run",
-    "Jest.POST /api/users.should reject if request is invalid.executor": "Run",
-    "Jest.POST /api/users/login.executor": "Run",
-    "Jest.POST /api/users/login.should can login.executor": "Run",
-    "Jest.POST /api/users/login.should reject login if password is wrong.executor": "Run",
-    "Jest.user.test.js.executor": "Run",
-    "Node.js.main.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/src/route",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/node_modules/jest",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.content | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.content | Create.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.content | Get All.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.content | Get.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Delete.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | GET request to example server.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Get (1).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Get.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Login (1).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Login.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.test | Update.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.DELETE /api/users/logout.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.DELETE /api/users/logout.should reject logout if token is invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents.should cannot get all content.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents.should get all content.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents/:contentId.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents/:contentId.should get content by ID.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents/:contentId.should return 403 if API key is incorrect.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/contents/:contentId.should return 404 if content not found.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/users/current.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.GET /api/users/current.should can get current user.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.PATCH /api/contents/:contentId.should update content by ID.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.PATCH /api/users/current.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.PATCH /api/users/current.should can update user.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/contents.should can add new content.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/contents.should cannot add new content.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users.should can register new user.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users.should reject if request is invalid.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users/login.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users/login.should can login.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.POST /api/users/login.should reject login if password is wrong.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.content.test.js.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.user.test.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.content-controller.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.content-service.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.web.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/src/route&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;C:/Users/Brian Anashari/Desktop/MyDream/project/belajar_mabrur_backend/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Brian Anashari\Desktop\MyDream\project\belajar_mabrur_backend\src\route" />
@@ -104,20 +135,8 @@
       <recent name="C:\Users\Brian Anashari\Desktop\MyDream\project\belajar_mabrur_backend\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.POST /api/contents.should can add new content">
-    <configuration name="content | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/content.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="test | Delete" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/test.http" index="5" requestIdentifier="Delete" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="test | Login (1)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/test.http" index="2" requestIdentifier="Login" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="test | Update" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/test/test.http" index="4" requestIdentifier="Update" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="POST /api/contents.should can add new content" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="GET /api/contents/:contentId.should get content by ID" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
@@ -125,18 +144,66 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/test/content.test.js" />
       <test-names>
-        <test-name value="POST /api/contents" />
-        <test-name value="should can add new content" />
+        <test-name value="GET /api/contents/:contentId" />
+        <test-name value="should get content by ID" />
       </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="GET /api/contents/:contentId.should return 403 if API key is incorrect" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/content.test.js" />
+      <test-names>
+        <test-name value="GET /api/contents/:contentId" />
+        <test-name value="should return 403 if API key is incorrect" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="GET /api/contents/:contentId.should return 404 if content not found" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/content.test.js" />
+      <test-names>
+        <test-name value="GET /api/contents/:contentId" />
+        <test-name value="should return 404 if content not found" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="PATCH /api/contents/:contentId.should update content by ID" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/content.test.js" />
+      <test-names>
+        <test-name value="PATCH /api/contents/:contentId" />
+        <test-name value="should update content by ID" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="content.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/test/content.test.js" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.POST /api/contents.should can add new content" />
-        <item itemvalue="HTTP Request.content | #1" />
-        <item itemvalue="HTTP Request.test | Login (1)" />
-        <item itemvalue="HTTP Request.test | Delete" />
-        <item itemvalue="HTTP Request.test | Update" />
+        <item itemvalue="Jest.PATCH /api/contents/:contentId.should update content by ID" />
+        <item itemvalue="Jest.content.test.js" />
+        <item itemvalue="Jest.GET /api/contents/:contentId.should return 403 if API key is incorrect" />
+        <item itemvalue="Jest.GET /api/contents/:contentId.should return 404 if content not found" />
+        <item itemvalue="Jest.GET /api/contents/:contentId.should get content by ID" />
       </list>
     </recent_temporary>
   </component>
@@ -161,11 +228,25 @@
       <workItem from="1731145368179" duration="1833000" />
       <workItem from="1731271905274" duration="6975000" />
       <workItem from="1731281005238" duration="3854000" />
-      <workItem from="1731285683314" duration="3517000" />
+      <workItem from="1731285683314" duration="3797000" />
+      <workItem from="1731304701211" duration="12122000" />
+      <workItem from="1731371466207" duration="3424000" />
+      <workItem from="1731374925703" duration="396000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

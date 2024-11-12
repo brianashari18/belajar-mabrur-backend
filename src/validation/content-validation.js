@@ -7,6 +7,14 @@ const addContentValidation = Joi.object({
     translate_id: Joi.string().max(100).required(),
 });
 
+const updateContentValidation = Joi.object({
+    name: Joi.string().max(100).required(),
+    arabic: Joi.string().max(100).required(),
+    latin: Joi.string().max(100).required(),
+    translate_id: Joi.string().max(100).required(),
+});
+
 export {
     addContentValidation,
+    updateContentValidation,
 }
