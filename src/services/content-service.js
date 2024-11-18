@@ -9,15 +9,15 @@ import { logger } from "../application/logging.js";
 const add = async (request) => {
     const content = await validate(addUpdateContentValidation, request);
 
-    const contentCount = await prismaClient.content.count({
-        where: {
-            name: content.name,
-        }
-    });
-
-    if (contentCount === 1) {
-        throw new ResponseError(400, "Name already in use");
-    }
+    // const contentCount = await prismaClient.content.count({
+    //     where: {
+    //         name: content.name,
+    //     }
+    // });
+    //
+    // if (contentCount === 1) {
+    //     throw new ResponseError(400, "Name already in use");
+    // }
 
     return prismaClient.content.create({
         data: {
@@ -133,8 +133,52 @@ const remove = async (request) => {
     });
 };
 
+const addMany = async (request) => {
+    const contents = request.body; // Assuming `request.body` contains an array of content objects
+    const results = [];
+
+    for (const content of contents) {
+        const validatedContent = await validate(addUpdateContentValidation, content);
+
+        // const contentCount = await prismaClient.content.count({
+        //     where: {
+        //         name: validatedContent.name,
+        //     }
+        // });
+        //
+        // if (contentCount === 1) {
+        //     throw new ResponseError(400, `Name ${validatedContent.name} already in use`);
+        // }
+
+        const newContent = await prismaClient.content.create({
+            data: {
+                name: validatedContent.name,
+                arabic: validatedContent.arabic,
+                latin: validatedContent.latin,
+                translate_id: validatedContent.translate_id,
+                category: validatedContent.category,
+                description: validatedContent.description
+            },
+            select: {
+                id: true,
+                name: true,
+                arabic: true,
+                latin: true,
+                translate_id: true,
+                category: true,
+                description: true
+            }
+        });
+
+        results.push(newContent);
+    }
+
+    return results;
+};
+
 export default {
     add,
+    addMany, // Export the addAll function
     getAll,
     get,
     update,

@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 export const apiKeyMiddleware = (req, res, next) => {
     const apiKey = req.get('X-API-KEY');
 

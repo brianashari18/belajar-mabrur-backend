@@ -13,6 +13,19 @@ const add = async (req, res, next) => {
     }
 }
 
+const addMany = async (req, res, next) => {
+    try {
+        const result = await contentService.addMany(req); // Using the addAll service function
+        res.status(200).json({
+            code: 200,
+            status: 'OK',
+            data: result
+        });
+    } catch (e) {
+        next(e);
+    }
+};
+
 const getAll = async (req, res, next) => {
     try {
         const result = await contentService.getAll(req.body);
@@ -67,6 +80,7 @@ const remove = async (req, res, next) => {
 
 export default {
     add,
+    addMany,
     getAll,
     get,
     update,

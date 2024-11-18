@@ -1,0 +1,4 @@
+{
+  "status": "INTERNAL SERVER ERROR",
+  "errors": "\nInvalid `prisma.content.create()` invocation:\n\n\nThe provided value for the column is too long for the column's type. Column: arabic"
+}

@@ -1,0 +1,5 @@
+{
+  "code": 400,
+  "status": "BAD REQUEST",
+  "errors": "\"arabic\" length must be less than or equal to 700 characters long"
+}

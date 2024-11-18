@@ -1,0 +1,4 @@
+{
+  "status": "INTERNAL SERVER ERROR",
+  "errors": "contentService.addAll is not a function"
+}

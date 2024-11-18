@@ -1,0 +1,5 @@
+{
+  "code": 400,
+  "status": "BAD REQUEST",
+  "errors": "Name Ihram/Niat Umrah dari Miqat already in use"
+}

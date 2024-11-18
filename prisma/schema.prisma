@@ -26,11 +26,11 @@ model User {
 model Content {
   id          Int      @id @db.Int @default(autoincrement())
   name        String   @db.VarChar(100)
-  arabic      String   @db.VarChar(100)
-  latin       String   @db.VarChar(100)
-  translate_id String   @db.VarChar(100)
+  arabic      String   @db.VarChar(1600)
+  latin       String   @db.VarChar(1600)
+  translate_id String   @db.VarChar(1600)
   category    String   @db.VarChar(50)
-  description String   @db.Text
+  description String   @db.VarChar(255)
 
   @@map("contents")
 }

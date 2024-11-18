@@ -1,0 +1,13 @@
+{
+  "code": 200,
+  "status": "OK",
+  "data": {
+    "id": 1,
+    "name": "Ihram/Niat Umrah dari Miqat",
+    "arabic": "لَبَّيْكَ اللَّهُمَّ عُمْرَةً",
+    "latin": "Labbaikallaahumma 'umratan",
+    "translate_id": "Ya Allah, aku penuhi panggilan-Mu untuk umrah.",
+    "category": "Ihram",
+    "description": "Niat ini diucapkan ketika seorang jamaah memulai ibadah umrah dari tempat miqat (tempat yang telah ditentukan untuk memulai niat ihram). Niat ini menandai dimulainya rangkaian ibadah umrah sebagai bentuk pemenuhan panggilan Allah."
+  }
+}
